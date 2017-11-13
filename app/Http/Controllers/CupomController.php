@@ -50,14 +50,12 @@ class CupomController extends Controller
             $filename =  $arquivo;
             if ($filename) {
 
-                //abrindo o arquivo com a library League\Csv\Reader;
                 $csv = Reader::createFromPath($filename);
 
                 //seta o delimitador
                 $csv->setDelimiter(",");
 
                 foreach ($csv as $index => $row) {
-                    //verifica se tem linha em branco no arquivo, se tiver não processa a linha
                     if ($row[0] != '') {
                         if ($index > 0) {
                             $document1 = str_replace('-', '', trim($row[0]));
