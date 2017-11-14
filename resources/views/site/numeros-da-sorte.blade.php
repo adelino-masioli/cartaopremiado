@@ -22,7 +22,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             setTimeout(function () {
-                scrollToDiv('#fh5co-register');
+                scrollToDiv('#my-numbers');
             }, 600);
         });
     </script>

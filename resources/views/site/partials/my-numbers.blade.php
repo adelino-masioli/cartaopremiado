@@ -1,3 +1,4 @@
+<div id="my-numbers"></div>
 <div id="fh5co-course-categories">
     <div class="container">
         <div class="row animate-box">
