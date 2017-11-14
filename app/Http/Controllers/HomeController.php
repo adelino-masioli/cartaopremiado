@@ -52,10 +52,10 @@ class HomeController extends Controller
 
             $args = $request->only('txt_name', 'txt_email', 'txt_phone', 'txt_uf',  'txt_message');
 
-            $args['toc'] = ['operacoes@loggia.com.br', 'alfjuniorbh.web@gmail.com'];
+            $args['toc'] = ['comunicacao@sicoobcrediminas.com.br', 'alfjuniorbh.web@gmail.com'];
 
             \Mail::send("email.contato", $args, function($message)  use ($args){
-                $message->from('junior@loggia.com.br','Cartão Premiado')
+                $message->from($args['txt_email'],'Cartão Premiado')
                     ->to($args['toc'])
                     ->subject('[Sicoob] Cartão Premiado');
             });
