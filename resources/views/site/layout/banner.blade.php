@@ -1,7 +1,7 @@
 <aside id="fh5co-hero">
     <div class="flexslider">
         <ul class="slides">
-            <li style="background-image: url({{asset('site/images/img_bg_1.jpg')}});"></li>
+            <li style="background-image: url({{asset('site/images/banner.png')}});"></li>
         </ul>
     </div>
 

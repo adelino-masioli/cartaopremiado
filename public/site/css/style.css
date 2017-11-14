@@ -2039,3 +2039,70 @@ ul.list-results-content li .second{
         height: 120px;
     }
 }
+/*banner*/
+@media screen and (min-width: 1450px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 700px;
+        height: 700px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 720px;
+        height: 720px;
+    }
+}
+@media screen and (min-width: 1700px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 780px;
+        height: 780px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 820px;
+        height: 820px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 870px;
+        height: 870px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 900px;
+        height: 900px;
+    }
+}
+@media screen and (min-width: 2100px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 960px;
+        height: 960px;
+    }
+}
+@media screen and (min-width: 2300px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 1000px;
+        height: 1000px;
+    }
+}
+@media screen and (min-width: 2400px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 1100px;
+        height: 1100px;
+    }
+}
+@media screen and (min-width: 3100px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 1200px;
+        height: 1200px;
+    }
+}
+@media screen and (min-width: 3400px) {
+    #fh5co-hero .flexslider .slides li {
+        min-height: 1300px;
+        height: 1300px;
+    }
+}
