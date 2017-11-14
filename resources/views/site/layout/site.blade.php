@@ -52,13 +52,78 @@
     <script src="{{asset('site/js/respond.min.js')}}"></script>
     <![endif]-->
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109689822-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-109689822-1');
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1500928426621583');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1500928426621583&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 </head>
 <body>
+    <!-- Google Code for Cart&atilde;o Premiado SicoobCard Conversion Page -->
+
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 856107660;
+        var google_conversion_label = "5R5NCIGkpHkQjNWcmAM";
+        var google_remarketing_only = false;
+        /* ]]> */
+
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/856107660/?label=5R5NCIGkpHkQjNWcmAM&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
+
     @yield('content')
 
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
+
+    <!-- Código do Google para tag de remarketing -->
+    <!--------------------------------------------------
+    As tags de remarketing não podem ser associadas a informações pessoais de identificação nem inseridas em páginas relacionadas a categorias de confidencialidade. Veja mais informações e instruções sobre como configurar a tag em: http://google.com/ads/remarketingsetup
+    --------------------------------------------------->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 856107660;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/856107660/?guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
 
     <!-- jQuery -->
     <script src="{{asset('site/js/jquery.min.js')}}"></script>
@@ -85,5 +150,7 @@
     <script src="{{asset('site/js/main.js')}}"></script>
 
     @stack('scripts')
+
+
 </body>
 </html>
