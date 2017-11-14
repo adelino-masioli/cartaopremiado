@@ -9,7 +9,7 @@
                     <ul>
                         <li><a href="{{url('/')}}">Home</a></li>
                         <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_comoparticipar');">Como participar</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_formconsult');">Consulte seus cupons</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_formconsult');">Consulte números da sorte</a></li>
                         <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_result');">Ganhadores</a></li>
                         <li><a href="{{route('regulation')}}">Regulamento</a></li>
                         <li><a href="javascript:void(0);" onclick="scrollToDiv('#lk_contact');">Fale conosco</a></li>

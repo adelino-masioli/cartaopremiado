@@ -1913,6 +1913,11 @@ ul.list-results-content li .second{
         height: 600px;
         margin-bottom: 20px;
     }
+    #fh5co-hero{
+        height: auto;
+        background: #003C43;
+        padding-bottom: 30px;
+    }
 }
 @media screen and (max-width: 847px) {
     #fh5co-contact form textarea{
