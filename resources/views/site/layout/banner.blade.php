@@ -1,5 +1,5 @@
 <aside id="fh5co-hero">
-    <div class="fh5co-register-banner" id="fh5co-register" style="background-image: url({{asset('site/images/banner.png')}});"></div>
+    <div class="fh5co-register-banner" id="fh5co-register-banner" style="background-image: url({{asset('site/images/banner.png')}});"></div>
 
 
     <div class="container">

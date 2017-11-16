@@ -408,6 +408,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter,
 #fh5co-course,
 #fh5co-register,
+#fh5co-register-banner,
 #fh5co-pricing,
 #fh5co-testimonial,
 #fh5co-blog,
@@ -423,6 +424,7 @@ h1, h2, h3, h4, h5, h6, figure {
     #fh5co-counter,
     #fh5co-course,
     #fh5co-register,
+    #fh5co-register-banner,
     #fh5co-pricing,
     #fh5co-testimonial,
     #fh5co-blog,
@@ -982,7 +984,14 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-blog .blog-text .btn-blog:hover {
     color: #fff !important;
 }
-
+#fh5co-register-banner {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    border-bottom: 10px solid #bfd730;
+    min-height: 500px;
+}
 #fh5co-register {
     background-size: cover;
     background-position: center top;
@@ -1974,6 +1983,14 @@ ul.list-results-content li .second{
     .fh5co-nav #fh5co-logo{
         text-align: center;
     }
+    .fh5co-register-banner {
+        min-height: 400px!important;
+        border-bottom: 0px solid #bfd730!important;
+    }
+    #fh5co-register-banner {
+        border-bottom: 0px solid #bfd730;
+        min-height: 400px!important;
+    }
 
 }
 @media screen and (max-width: 650px) {
@@ -1992,8 +2009,12 @@ ul.list-results-content li .second{
         margin-bottom: 0px;
     }
     .fh5co-register-banner {
-        min-height: 400px!important;
+        min-height: 360px!important;
         border-bottom: 0px solid #bfd730!important;
+    }
+    #fh5co-register-banner {
+        border-bottom: 0px solid #bfd730;
+        min-height: 360px!important;
     }
 }
 @media screen and (max-width: 600px) {
@@ -2006,10 +2027,6 @@ ul.list-results-content li .second{
         height: 300px;
         margin-bottom: 20px;
     }
-    .fh5co-register-banner {
-        min-height: 360px!important;
-        border-bottom: 0px solid #bfd730!important;
-    }
     #fh5co-register{
         background-image: none!important;
         border: 0px;
@@ -2021,6 +2038,14 @@ ul.list-results-content li .second{
     }
     .box-consult{
         margin-top: -40px;
+    }
+    .fh5co-register-banner {
+        min-height: 360px!important;
+        border-bottom: 0px solid #bfd730!important;
+    }
+    #fh5co-register-banner {
+        border-bottom: 0px solid #bfd730;
+        min-height: 360px!important;
     }
 }
 @media screen and (max-width: 463px) {
@@ -2049,6 +2074,10 @@ ul.list-results-content li .second{
         min-height: 280px!important;
         border-bottom: 0px solid #bfd730!important;
     }
+    #fh5co-register-banner {
+        border-bottom: 0px solid #bfd730;
+        min-height: 280px!important;
+    }
 }
 @media screen and (max-width: 404px) {
     .videoWrapper iframe {
@@ -2070,6 +2099,10 @@ ul.list-results-content li .second{
     .fh5co-register-banner {
         min-height: 250px!important;
         border-bottom: 0px solid #bfd730!important;
+    }
+    #fh5co-register-banner {
+        border-bottom: 0px solid #bfd730;
+        min-height: 250px!important;
     }
 }
 @media screen and (max-width: 377px) {
