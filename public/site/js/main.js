@@ -220,6 +220,7 @@
 	var sliderMain = function() {
 		
 	  	$('#fh5co-hero .flexslider').flexslider({
+            slideshow:false,
 			animation: "slide",
 
 			easing: "swing",

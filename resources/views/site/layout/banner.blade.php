@@ -1,9 +1,6 @@
 <aside id="fh5co-hero">
-    <div class="flexslider">
-        <ul class="slides">
-            <li style="background-image: url({{asset('site/images/banner.png')}});"></li>
-        </ul>
-    </div>
+    <div class="fh5co-register-banner" id="fh5co-register" style="background-image: url({{asset('site/images/banner.png')}});"></div>
+
 
     <div class="container">
         <div class="row animate-box">
