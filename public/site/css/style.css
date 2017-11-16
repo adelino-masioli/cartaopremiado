@@ -2010,6 +2010,18 @@ ul.list-results-content li .second{
         min-height: 360px!important;
         border-bottom: 0px solid #bfd730!important;
     }
+    #fh5co-register{
+        background-image: none!important;
+        border: 0px;
+        padding: 0px;
+        height: auto;
+        min-height: 100px;
+        background: #ffffff;
+        margin-top: 0px;
+    }
+    .box-consult{
+        margin-top: -40px;
+    }
 }
 @media screen and (max-width: 463px) {
     .box-consult {
