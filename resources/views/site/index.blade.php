@@ -37,7 +37,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td class="text-left">De 0h do dia 15/01/2017 até às 23h59m59s do dia 30/11/2017</td>
+                                        <td class="text-left">De 0h do dia 15/11/2017 até às 23h59m59s do dia 30/11/2017</td>
                                         <td>Até 15/12/2017</td>
                                     </tr>
                                     <tr>
