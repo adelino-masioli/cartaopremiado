@@ -27,7 +27,7 @@
                                 e Visa: Clássico, Gold e Platinum.
                             </h3>
                             <h4><strong>Campanha exclusiva para associados das cooperativas filiadas ao Sicoob Central Crediminas.</strong></h4>
-                            <div class="col-md-12">
+                            <div class="col-md-12 hidden">
                                 <table class="table table-condensed tbl-numeros-sorte">
                                     <thead>
                                     <tr>
