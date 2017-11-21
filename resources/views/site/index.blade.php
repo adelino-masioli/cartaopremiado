@@ -27,7 +27,7 @@
                                 e Visa: Clássico, Gold e Platinum.
                             </h3>
                             <h4><strong>Campanha exclusiva para associados das cooperativas filiadas ao Sicoob Central Crediminas.</strong></h4>
-                            <div class="col-md-12">
+                            <div class="col-md-12 hidden">
                                 <table class="table table-condensed tbl-numeros-sorte">
                                     <thead>
                                     <tr>
@@ -37,7 +37,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td class="text-left">De 0h do dia 15/01/2017 até às 23h59m59s do dia 30/11/2017</td>
+                                        <td class="text-left">De 0h do dia 15/11/2017 até às 23h59m59s do dia 30/11/2017</td>
                                         <td>Até 15/12/2017</td>
                                     </tr>
                                     <tr>
