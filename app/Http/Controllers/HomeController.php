@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ListCupom;
+use Image;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -23,8 +26,81 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data = ListCupom::orderBy('id', 'asc')->get();
+        return view('home', compact('data'));
     }
+
+    public function createList()
+    {
+        return view('create_list');
+    }
+
+    public function storeList(Request $request)
+    {
+        try{
+            if($request->hasFile('file')):
+                $data   = $request->all();
+                $file   = $request->file('file');
+                $name   = Str::lower(date('H-i-s').'-'.$request->file('file')->getClientOriginalName());
+                $path   = 'upload';
+
+                $data['document']   = $name;
+                $data['status']     = 1;
+                $array               = ListCupom::create($data);
+
+                if ($array->save()):
+                     $pfile = public_path($path);
+                     \File::makeDirectory($pfile, 0777, true, true);
+                     $file->move($path, $name);
+
+                    \Session::flash('messageclass', 'success');
+                    \Session::flash('messageform', 'Arquivo enviado com suecesso!');
+                    return back()->withInput();
+                else:
+                    \Session::flash('messageclass', 'danger');
+                    \Session::flash('messageform', 'Erro ao enviar o arquivo!');
+                    return back()->withInput();
+                endif;
+            else:
+                \Session::flash('messageclass', 'info');
+                \Session::flash('messageform', 'Favor selecionar um arquivo!');          
+                return back()->withInput();
+            endif;
+        }catch(\Exception $e){
+            \Session::flash('messageclass', 'danger');
+            \Session::flash('messageform', 'Erro ao enviar o arquivo!');
+            return back()->withInput();
+        }
+    }
+
+    public function destroyList($id)
+    {
+        try{
+            $id = $id;
+
+            $document  = ListCupom::find($id);   
+            
+            if($document->status == 1){
+                \File::delete('upload/'.$document->document);
+                $document->delete();
+
+                \Session::flash('messageclass', 'success');
+                \Session::flash('messageform', 'Arquivo excluido com suecesso!');
+                return back()->withInput();
+            }else{
+                \Session::flash('messageclass', 'danger');
+                \Session::flash('messageform', 'Erro ao excluir o arquivo. Já foi <strong>PROCESSADO</strong> no sistema!');
+                return back()->withInput();
+            }
+        
+        }catch(\Exception $e){
+            \Session::flash('messageclass', 'danger');
+            \Session::flash('messageform', 'Erro ao excluir o arquivo!');
+            return back()->withInput();
+        }
+    }
+
+
 
     public function submitform(Request $request)
     {

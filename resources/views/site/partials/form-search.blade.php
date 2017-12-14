@@ -5,7 +5,7 @@
             <div class="date-counter text-center">
                 <div class="box-consult">
                     <form action="{{route('cupons.consult')}}" method="post">
-                        {{ csrf_field() }}
+                        <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <input type="text" name="txt_document" id="txt_cupom1" onkeypress="onlyNumber('#txt_cupom1');">
                         <input type="submit" id="btn_search_cupom1" value="">
                     </form>
@@ -21,7 +21,7 @@
             <div class="date-counter text-center">
                 <div class="box-consult">
                     <form action="{{route('cupons.consult')}}" method="post">
-                        {{ csrf_field() }}
+                        <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <input type="text" name="txt_document" id="txt_cupom" onkeypress="onlyNumber('#txt_cupom');">
                         <input type="submit" id="btn_search_cupom" value="">
                     </form>

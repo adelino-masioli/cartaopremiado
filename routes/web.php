@@ -18,10 +18,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->get('/home', 'HomeController@index')->name('home');
 //cupons
-Route::middleware('auth')->get('upload-cupons', '\App\Http\Controllers\CupomController@uploadFile');
-Route::post('cunsultar-cupons', '\App\Http\Controllers\CupomController@consult')->name('cupons.consult');
+//Route::middleware('auth')->get('upload-cupons', '\App\Http\Controllers\CupomController@createList');
+Route::middleware('auth')->get('create-list', 'HomeController@createList');
+Route::middleware('auth')->post('create-list-store', 'HomeController@storeList');
+Route::middleware('auth')->get('create-list-destroy/{id}', 'HomeController@destroyList');
+
+Route::post('consultar-cupons', '\App\Http\Controllers\CupomController@consult')->name('cupons.consult');
 Route::get('numeros-da-sorte', '\App\Http\Controllers\CupomController@numbers')->name('numbers');
 Route::get('cartapremiado/{slug}', '\App\Http\Controllers\CupomController@cartapremiado')->name('cartapremiado');
 

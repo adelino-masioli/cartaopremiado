@@ -1929,10 +1929,12 @@ ul.list-results-content li .second{
     text-align: left;
 }
 .my-numbers{
-    margin-top: 20px;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 30px;
 }
-.my-numbers li{
-    font-size: 16px;
+.my-numbers, .my-numbers tr, .my-numbers th, .my-numbers td{
+    border: 0px!important;
 }
 
 #fh5co-hero{

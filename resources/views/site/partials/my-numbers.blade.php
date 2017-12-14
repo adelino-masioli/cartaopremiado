@@ -45,11 +45,28 @@
                             <h3>{!! Session::get('message_cupom') !!}</h3>
                         @endif
                         @if(Session::has('my_cupons'))
-                            <ul class="my-numbers">
+                            <table class="table table-condensed my-numbers">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">CPF/CNPJ</th>
+                                        <th class="text-center">REGIÃO</th>
+                                        <th class="text-center">SÉRIE</th>
+                                        <th class="text-center">Nº DA SORTE</th>
+                                    </tr>
+                                </thead>
+                             <tbody>
                                 @foreach(Session::get('my_cupons') as $my_cupon)
-                                    <li>{{$my_cupon->cupom}}</li>
+                                   
+                                        <tr>
+                                            <td>{{$my_cupon->document}}</td>
+                                            <td>{{$my_cupon->singular}}</td>
+                                            <td>{{$my_cupon->serie}}</td>
+                                            <td>{{$my_cupon->cupom}}</td>
+                                        </tr>
+                                    
                                 @endforeach
-                            </ul>
+                                </tbody>
+                            </table>
                         @endif
                     </div>
                 </div>
