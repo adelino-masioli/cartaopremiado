@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-8 col-sm-push-2 col-md-8 col-md-push-2 animate-box">
                 <form action="{{route('submitform')}}" method="post">
-                    {{ csrf_field() }}
+                    <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                     <h3>CONTATO</h3>
 
                     <div class="row form-group">

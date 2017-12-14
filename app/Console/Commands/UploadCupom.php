@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 
 use App\Cupom;
+use App\ListCupom;
 use League\Csv\Reader;
 
 class UploadCupom extends Command
@@ -41,50 +42,59 @@ class UploadCupom extends Command
     public function handle()
     {
         /*-------------*/
-        $arquivo = public_path() . '/' .'upload/CAMPANHA_11_UAR1_CUPONS_ATRIB_20171204.csv';
-        if (!empty($arquivo)) {
+        $listcupons = ListCupom::where('status', 1)->count();
+        if($listcupons > 0){
+            $listcupons = ListCupom::where('status', 1)->first();
+            //$arquivo = public_path() . '/' .'upload/CAMPANHA_11_UAR1_CUPONS_ATRIB_20171204.csv';
+            $arquivo = public_path() . '/' .'upload/'.$listcupons->document;
+            if (!empty($arquivo)) {
 
-            //$filename = public_path() . '/' . $arquivo;
-            $filename =  $arquivo;
-            if ($filename) {
+                //$filename = public_path() . '/' . $arquivo;
+                $filename =  $arquivo;
+                if ($filename) {
 
-                $csv = Reader::createFromPath($filename);
+                    $csv = Reader::createFromPath($filename);
 
-                //seta o delimitador
-                $csv->setDelimiter(";");
+                    //seta o delimitador
+                    $csv->setDelimiter(";");
 
-                foreach ($csv as $index => $row) {
-                    if ($row[0] != '') {
-                        if ($index > 0) {
-                            $document1 = str_replace('-', '', trim($row[1]));
-                            $document2 = str_replace('.', '', $document1);
-                            $cupom     = str_replace(',', '', trim($row[3]));
-                            $locale_name = str_replace('REGIAO', '', trim($row[4]));
+                    foreach ($csv as $index => $row) {
+                        if ($row[0] != '') {
+                            if ($index > 0) {
+                                $document1 = str_replace('-', '', trim($row[1]));
+                                $document2 = str_replace('.', '', $document1);
+                                $cupom     = str_replace(',', '', trim($row[3]));
+                                $locale_name = str_replace('REGIAO', '', trim($row[4]));
 
-                            $data_db = array(
-                                'document'   => trim($document2),
-                                'serie'      => trim($row[2]),
-                                'cupom'      => trim($cupom),
-                                'uar'        => trim($row[4]),
-                                'singular'   => trim('Região '.$locale_name),
-                                'created_at' => date('Y-m-d H:i:s'),
-                                'updated_at' => date('Y-m-d H:i:s'),
+                                $data_db = array(
+                                    'document'   => trim($document2),
+                                    'serie'      => trim($row[2]),
+                                    'cupom'      => trim($cupom),
+                                    'uar'        => trim($row[4]),
+                                    'singular'   => trim('Região '.$locale_name),
+                                    'created_at' => date('Y-m-d H:i:s'),
+                                    'updated_at' => date('Y-m-d H:i:s'),
 
-                            );
-                            $validate = Cupom::where('cupom', $cupom)->count();
-                            if($validate == 0) {
-                                $createcsv = new Cupom($data_db);
-                                $createcsv->save();
+                                );
+                                $validate = Cupom::where('cupom', $cupom)->count();
+                                if($validate == 0) {
+                                    $createcsv = new Cupom($data_db);
+                                    $createcsv->save();
+                                }
                             }
                         }
                     }
+                    //update
+                    $cupom_list = ListCupom::find($listcupons->id);
+                    $data = ['status'=>2];                
+                    $cupom_list->fill($data)->save();
+
+                } else {
+                    return FALSE;
                 }
 
-            } else {
-                return FALSE;
             }
-
+            /*-------------*/
         }
-        /*-------------*/
     }
 }
