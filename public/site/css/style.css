@@ -10,6 +10,10 @@
 * 	Template Style 
 *
 * ======================================================= */
+*{
+    outline: 0!important;
+    outline: none!important;
+}
 body {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 400;

@@ -10,6 +10,9 @@ use League\Csv\Reader;
 
 class UploadCupom extends Command
 {
+    //pra rodar esse carinha forçando 
+    //php -dmemory_limit=1G artisan command:uploadcupom 
+
     /**
      * The name and signature of the console command.
      *
@@ -76,11 +79,11 @@ class UploadCupom extends Command
                                     'updated_at' => date('Y-m-d H:i:s'),
 
                                 );
-                                $validate = Cupom::where('cupom', $cupom)->count();
-                                if($validate == 0) {
+                                //$validate = Cupom::where('cupom', $cupom)->count();
+                                //if($validate == 0) {
                                     $createcsv = new Cupom($data_db);
                                     $createcsv->save();
-                                }
+                               // }
                             }
                         }
                     }
