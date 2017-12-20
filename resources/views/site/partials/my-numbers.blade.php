@@ -15,11 +15,11 @@
                 <td>Até 15/12/2017</td>
             </tr>
             <tr>
-                <td class="text-left">De 0h do dia 01/12/2017 até às 23h59m59s do dia 31/11/2017</td>
-                <td>Até 17/12/2018</td>
+                <td class="text-left">De 0h do dia 01/12/2017 até às 23h59m59s do dia 31/12/2017</td>
+                <td>Até 17/01/2018</td>
             </tr>
             <tr>
-                <td class="text-left">De 0h do dia 01/01/2018 até às 23h59m59s do dia 31/01/2017</td>
+                <td class="text-left">De 0h do dia 01/01/2018 até às 23h59m59s do dia 31/01/2018</td>
                 <td>Até 20/02/2018</td>
             </tr>
             <tr>
