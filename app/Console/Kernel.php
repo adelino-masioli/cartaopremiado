@@ -27,7 +27,8 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('command:uploadcupom')->hourly();
+        //$schedule->command('command:uploadcupom')->everyFiveMinutes();
+        $schedule->exec("php -dmemory_limit=1G artisan command:uploadcupom");
     }
 
     /**
