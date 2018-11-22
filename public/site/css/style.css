@@ -10,6 +10,10 @@
 * 	Template Style 
 *
 * ======================================================= */
+*{
+    outline: 0!important;
+    outline: none!important;
+}
 body {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 400;
@@ -30,15 +34,12 @@ body {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
-.offcanvas #page {
-    overflow: hidden;
-    position: absolute;
-}
+
 .offcanvas #page:after {
     -webkit-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     right: 0;
     bottom: 0;
@@ -1234,7 +1235,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-offcanvas {
-    position: absolute;
+    position: fixed;
     z-index: 1901;
     width: 270px;
     background: black;
@@ -1362,11 +1363,14 @@ h1, h2, h3, h4, h5, h6, figure {
     outline: none;
 }
 
+.js-fh5co-nav-toggle{
+    position: fixed!important;
+}
 .fh5co-nav-toggle {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none;   
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
     background: #444;
@@ -1805,7 +1809,7 @@ ul.list-results-content li div{
 
 }
 ul.list-results-content li span{
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     padding: 3px 20px;
     border-radius: 7px;
