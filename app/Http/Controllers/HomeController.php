@@ -137,12 +137,12 @@ class HomeController extends Controller
 
             $args['toc'] = [$contact_dest, 'alfjuniorbh.web@gmail.com'];
 
-           /* \Mail::send("email.contato", $args, function($message)  use ($args){
+           \Mail::send("email.contato", $args, function($message)  use ($args){
                 $message->from($args['txt_email'],'Cartão Premiado')
                     ->to($args['toc'])
                     ->subject('[Sicoob] Cartão Premiado');
             });
-            */
+            
             return back();
         }catch(\Exception $e){
             session()->forget('lk_goto');
