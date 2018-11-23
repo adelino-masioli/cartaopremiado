@@ -110,6 +110,7 @@ class HomeController extends Controller
             'txt_phone'     => 'required',
             'txt_uf'        => 'required',
             'txt_message'   => 'required',
+            'txt_coop'      => 'required'
         ]);
 
         if ($validator->fails()) {
@@ -126,9 +127,15 @@ class HomeController extends Controller
             \Session::flash('messageclass', 'text-success');
             \Session::flash('messageform', 'Contato enviado com suecesso!');
 
-            $args = $request->only('txt_name', 'txt_email', 'txt_phone', 'txt_uf',  'txt_message');
+            $args = $request->only('txt_name', 'txt_email', 'txt_phone', 'txt_uf', 'txt_coop',   'txt_message');
 
-            $args['toc'] = ['comunicacao@sicoobcrediminas.com.br', 'alfjuniorbh.web@gmail.com'];
+            if($request->txt_coop == 'Crediminas'){
+                $contact_dest = 'comunicacao@sicoobcrediminas.com.br';
+            }else{
+                $contact_dest = 'daniela.miranda@cecremge.org.br';
+            }
+
+            $args['toc'] = [$contact_dest, 'alfjuniorbh.web@gmail.com'];
 
            /* \Mail::send("email.contato", $args, function($message)  use ($args){
                 $message->from($args['txt_email'],'Cartão Premiado')

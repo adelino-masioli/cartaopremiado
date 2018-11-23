@@ -23,7 +23,7 @@
 					<div class="services cooperativas">
 						<div class="desc">
 
-                            <?php for($i=1;$i<19;$i++){ ?>
+                            <?php for($i=1;$i<18;$i++){ ?>
                                 <img class="img-responsive animate-box" src="{{asset('site/images/regulamento/'.$i.'.jpg')}}" alt="Regulamento">
                             <?php } ?>
 

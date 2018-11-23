@@ -11,7 +11,7 @@
             <div class="col-md-12 text-center animate-box">
                 <div class="results">
                     <div class="desc">
-                            <a href="{{route('regulation')}}"><img src="{{asset('site/images/btn_regulamento.png')}}" alt="" class="animate-box" style="width:320px;"></a>
+                            <a href="{{route('regulation')}}"><img src="{{asset('site/images/btn_regulamento.png')}}" alt="" class="animate-box btn_regulamento" style="width:320px;"></a>
                     </div>
                 </div>
             </div>

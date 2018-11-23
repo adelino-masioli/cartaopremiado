@@ -451,12 +451,16 @@ h1, h2, h3, h4, h5, h6, figure {
     }
 }
 #fh5co-course-categories{
-    background-image: url("../images/como-participar-lines.png"), url("../images/bg_body.jpg");
+   /*background-image: url("../images/como-participar-lines.png"), url("../images/bg_body.jpg");
     background-position: -780px bottom;
     background-repeat: no-repeat, repeat;
-    background-size: 100%, auto;
+    background-size: 100%, auto;*/
+    background-image:  url("../images/bg_body.jpg");
+    background-position: bottom;
+    background-repeat: repeat;
+    background-size:  auto;
     padding-top: 49px;
-    padding-bottom: 38px;
+    padding-bottom: 0px;
 }
 #fh5co-sorteio{
     background:  #017a83;
@@ -1878,7 +1882,8 @@ ul.list-results-content li .second{
 }
 #fh5co-contact{
     padding-top: 49px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
+    background: #017a83;
 }
 
 
@@ -1905,8 +1910,10 @@ ul.list-results-content li .second{
     margin-bottom: 0px;
     border: 1px solid #ffffff;
     border-radius: 1px;
-    color: #ffffff;
+    color: #a8c717;
 }
+
+
 #fh5co-contact form textarea{
     border-radius: 1px;
     min-width: 100%;
@@ -1918,6 +1925,7 @@ ul.list-results-content li .second{
     margin: auto;
     margin-bottom: 3px;
     border: 1px solid #ffffff;
+    color: #a8c717;
 }
 #fh5co-contact form .btn{
     width:  125px;
@@ -1993,6 +2001,27 @@ ul.list-results-content li .second{
     padding-bottom: 30px;
 }
 
+.woman-desktop{
+    margin-left: -550px;
+    width: 160%;
+}
+.woman-responsive{
+    display: none;
+}
+.images-inform{
+    position: relative;
+    margin-top: -265px;
+}
+.img-maquininha{
+    margin-left: 30px;
+    width: 92%;
+}
+.img-como-participar{
+    margin-left: 30px;
+    width: 92%;
+}
+
+
 /*responsive*/
 @media screen and (max-width: 992px) {
     .container{
@@ -2019,6 +2048,27 @@ ul.list-results-content li .second{
         background: #003C43;
         padding-bottom: 30px;
     }
+
+    .images-inform{
+        width: 100%;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+    .btn_regulamento{
+        margin-top: 20px;
+    }
+    .img-como-participar, .img-maquininha{
+        width: 70%;
+        margin: 30px 0px;
+    }
+    .woman-desktop{
+        display: none;
+    }
+    .woman-responsive{
+        display: block;
+        width: 100%;
+        margin-left: -70px;
+    }
 }
 @media screen and (max-width: 847px) {
     #fh5co-contact form textarea{
@@ -2036,6 +2086,8 @@ ul.list-results-content li .second{
         font-size: 14px;
     }
 }
+
+
 @media screen and (max-width: 768px) {
     .js-fh5co-nav-toggle{
         top: 22px;
@@ -2062,16 +2114,23 @@ ul.list-results-content li .second{
         border: 0px;
         padding: 0px!important;
         height: auto;
-        min-height: 100px;
-        background: #ffffff;
+        min-height: 600px;
+        background: #a8c717;
         margin-top: 0px;
         padding-bottom: 30px;
     }
+    .h1-title{
+        text-align: center;
+    }
+    .h1-title img {
+        margin: auto;
+        margin-top: 45px;
+        margin-bottom: 10px;
+    }
     .box-consult {
         display: block;
-        background-image: url("../images/box-consult-responsive.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         background-position: center center;
         width: 400px;
         height: 319px;
@@ -2087,20 +2146,23 @@ ul.list-results-content li .second{
     #txt_cupom{
         float: left;
         height: 30px;
-        width: 70%;
+        width: 95%;
         border: 0px;
-        margin-top: 165px;
-        margin-left:55px;
-        background: none;
+        margin-top: 45px;
+        margin-left:10px;
+    }
+    #fh5co-contact form textarea{
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
     #btn_search_cupom{
-        float: left;
+        float: right;
         height: 40px;
         width: 150px;
         border: 0px;
-        margin-top: 25px;
-        margin-left: 105px;
-        background: none;
+        margin-top: 10px;
+        margin-right: -10px;
     }
     .img-table{
         display: block;
@@ -2115,6 +2177,7 @@ ul.list-results-content li .second{
     #sw-my-numbers h3{
         font-size: 15px;
     }
+
 }
 @media screen and (max-width: 768px) {
     .js-fh5co-nav-toggle{
@@ -2194,7 +2257,6 @@ ul.list-results-content li .second{
 @media screen and (max-width: 463px) {
     .box-consult {
         display: inline-block;
-        background-image: url("../images/box-consult-responsive.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
@@ -2251,7 +2313,6 @@ ul.list-results-content li .second{
 @media screen and (max-width: 377px) {
     .box-consult {
         display: inline-block;
-        background-image: url("../images/box-consult-responsive2.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
@@ -2318,6 +2379,28 @@ ul.list-results-content li .second{
         min-height: 800px!important;
         border-bottom: 0px solid #bfd730!important;
     }
+
+
+    .woman-desktop{
+        margin-left: -930px;
+        width: 220%;
+    }
+    .woman-responsive{
+        display: none;
+    }
+    .images-inform{
+        position: relative;
+        margin-top: -360px;
+    }
+    .img-maquininha{
+        margin-left: 30px;
+        width: 120%;
+    }
+    .img-como-participar{
+        margin-left: 30px;
+        width: 120%;
+    }
+    
 }
 @media screen and (min-width: 2100px) {
     #fh5co-hero .flexslider .slides li {
@@ -2345,6 +2428,29 @@ ul.list-results-content li .second{
         border-bottom: 0px solid #bfd730!important;
     }
 }
+
+@media screen and (min-width: 2800px) {
+    .woman-desktop{
+        margin-left: -1190px;
+        width: 250%;
+    }
+    .woman-responsive{
+        display: none;
+    }
+    .images-inform{
+        position: relative;
+        margin-top: -400px;
+    }
+    .img-maquininha{
+        margin-left: 0px;
+        width: 130%;
+    }
+    .img-como-participar{
+        margin-left: 0px;
+        width: 130%;
+    }
+}
+
 @media screen and (min-width: 3100px) {
     #fh5co-hero .flexslider .slides li {
         min-height: 1200px;
@@ -2354,6 +2460,27 @@ ul.list-results-content li .second{
     .fh5co-register-banner {
         min-height: 1300px!important;
         border-bottom: 0px solid #bfd730!important;
+    }
+
+
+    .woman-desktop{
+        margin-left: -1400px;
+        width: 300%;
+    }
+    .woman-responsive{
+        display: none;
+    }
+    .images-inform{
+        position: relative;
+        margin-top: -400px;
+    }
+    .img-maquininha{
+        margin-left: 30px;
+        width: 120%;
+    }
+    .img-como-participar{
+        margin-left: 30px;
+        width: 120%;
     }
 }
 @media screen and (min-width: 3400px) {

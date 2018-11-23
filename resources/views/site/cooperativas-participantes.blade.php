@@ -8,7 +8,7 @@
         @include("site.layout.banner")
 
 
-
+        <div id="fh5co-cooperativas-part"></div>
 	<div id="fh5co-sorteio">
 		<div class="container">
 			<div class="row animate-box">
@@ -167,7 +167,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             setTimeout(function () {
-                scrollToDiv('#fh5co-course-categories');
+                scrollToDiv('#fh5co-cooperativas-part');
             }, 600);
         });
     </script>

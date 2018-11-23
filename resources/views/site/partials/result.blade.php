@@ -6,7 +6,7 @@
                     <h1 class="h1-title"><img src="{{asset('site/images/txt_sorteio.png')}}" alt="" class="img-responsive animate-box" style="width:230px;"></h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row hidden">
             <div class="col-md-12 text-center animate-box">
                 <div class="results">
                     <div class="desc">

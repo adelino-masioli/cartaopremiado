@@ -17,17 +17,18 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center animate-box">
+				<div class="col-xs-12  col-sm-12 col-lg-12 text-center animate-box">
 					<div class="servicess">
-                        <img class="img-responsive" src="{{asset('site/images/woman.png')}}" alt="Cartão Premiado" style="position:relative;top:18px;">
+                        <img class="woman-desktop" src="{{asset('site/images/woman_line.png')}}" alt="Cartão Premiado">
+                        <img class="woman-responsive" src="{{asset('site/images/woman-responsive.png')}}" alt="Cartão Premiado">
 					</div>
                 </div>
                 
-                <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-5 text-center animate-box">
+                <div class="col-xs-12  col-sm-4 col-sm-offset-5 col-lg-4 col-lg-offset-5 text-center animate-box images-inform">
 					<div class="servicess">
                         <img class="img-maquininha" src="{{asset('site/images/box-cartoes-participantes.png')}}" alt="Cartões participantes Cabal: Clássico, Conta Empresa, Débito, Empresarial, Essencial, Gold; MasterCard: Conta Empresa, Clássico, Débito, Empresarial, Gold, Platinum, Black, Black Mereti; e Visa: Clássico, Gold e Platinum." style="position:relative;top:18px;">            
                         <a href="{{route('cooperatives')}}">
-                            <img src="{{asset('site/images/box-coorperativas.png')}}" alt="">   
+                            <img src="{{asset('site/images/box-coorperativas.png')}}" class="img-como-participar" alt="">   
                         </a>                
 					</div>
 				</div>
