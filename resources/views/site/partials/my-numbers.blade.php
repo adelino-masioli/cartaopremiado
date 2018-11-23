@@ -34,7 +34,7 @@
     <div class="container" id="sw-my-numbers">
         <div class="row animate-box">
             <div class="col-md-6 col-md-offset-3 text-center fh5co-heading fh5co-heading-1">
-                <h1>MEUS NÚMEROS DA SORTE</h1>
+                    <h1 class="h1-title"><img src="{{asset('site/images/txt_meus_numero_da_sorte.png')}}" alt="" class="img-responsive animate-box" style="width:400px;"></h1>
             </div>
         </div>
         <div class="row">

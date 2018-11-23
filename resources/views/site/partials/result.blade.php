@@ -1,22 +1,22 @@
 <div id="lk_result"></div>
-<div id="fh5co-course-categories">
+<div id="fh5co-sorteio">
     <div class="container">
         <div class="row animate-box">
-            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading fh5co-heading-1">
-                <h1>SORTEIOS</h1>
+             <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center fh5co-heading">
+                    <h1 class="h1-title"><img src="{{asset('site/images/txt_sorteio.png')}}" alt="" class="img-responsive animate-box" style="width:230px;"></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 text-center animate-box">
                 <div class="results">
                     <div class="desc">
-                        <h3>Sorteio 07/03/2018<br/>09 Gols (1 por região)</h3>
+                        <h3>Sorteio Mensal - 23/01/2019 | 01 (um) Renaut Kwind Zen 0Km</h3>
                     </div>
                     <ul class="list-results-head">
-                        <li class="col-md-5">NOME:</li>                        
-                        <li class="col-md-3">COOPERATIVA:</li>
+                        <li class="col-md-5">Nome:</li>                        
+                        <li class="col-md-3">Cooperativa:</li>
                         <li class="col-md-1">PA:</li>
-                        <li class="col-md-3">CIDADE:</li>
+                        <li class="col-md-3">Cidade:</li>
                     </ul>
 
                     <ul class="list-results-content">
@@ -65,20 +65,7 @@
                         <li class="col-md-1"><div class="second" style="width:84%;"><span class="text-center">12</span></div></li>
                         <li class="col-md-3"><div class="second">                   <span>Varginha - MG</span></div></li>
                     </ul>
-                    
-                     <ul class="list-results-head hidden">
-                        <li class="col-md-6">Nome:</li>
-                        <li class="col-md-3">Número do cupom:</li>
-                        <li class="col-md-3">Cooperativa:</li>
-                    </ul>
-
-                    <ul class="list-results-content hidden">
-                        <?php for($i=0;$i<10;$i++){ ?>
-                            <li class="col-md-6"><div class="first"><span>Aderbal Xavier da Lua</span></div></li>
-                            <li class="col-md-3"><div class="second"><span>12345678910</span></div></li>
-                            <li class="col-md-3"><div><span>Cooperativa</span></div></li>
-                        <?php } ?>
-                    </ul>
+                     
                 </div>
             </div>
         </div>
@@ -87,9 +74,8 @@
             <div class="col-md-12 text-center animate-box">
                 <div class="results">
                     <div class="desc">
-                        <h3 class="hidden">Sorteio 07/03/2018<br/>09 Gols (1 por região)</h3>
-                        <h3>Sorteio Final 10/03/2018<br/>01 Hilux</h3>
-                        <h3 class="hidden">O sorteio ainda não foi realizado.</h3>
+                        <h3>Sorteio Mensal - 23/01/2019 | 01 (um) Renaut Kwind Zen 0Km</h3>
+                        <h3>O sorteio ainda não foi realizado.</h3>
                     </div>
                 </div>
             </div>

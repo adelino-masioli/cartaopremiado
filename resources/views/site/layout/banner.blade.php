@@ -1,16 +1,16 @@
 <aside id="fh5co-hero">
-    <div class="fh5co-register-banner" id="fh5co-register-banner" style="background-image: url({{asset('site/images/banner.png')}});"></div>
+    <div class="fh5co-register-banner" id="fh5co-register-banner">
+        <img src="{{asset('site/images/section_1.png')}}" alt="" class="img-responsive animate-box">
+    </div>
 
 
     <div class="container">
         <div class="row animate-box">
-            <div class="col-md-12 text-center fh5co-heading">
-                <p>Período da campanha : 15/11/17 a 18/2/18</p>
+            <div class="col-md-12 text-center fh5co-heading">                
                 <div class="videoWrapper">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mRF0fzudlLU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <h3>Acelere sua sorte! Pague tudo com o Sicoobcard* <br/>e concorra a um carro 0km.</h3>
-                <h4>No débito ou crédito, quanto mais você usar, mais chances tem de ganhar.</h4>
+                <p class="animate-box">Período da campanha :  01/12/18 a 28/02/19</p>
             </div>
         </div>
     </div>

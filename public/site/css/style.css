@@ -13,6 +13,14 @@
 *{
     outline: 0!important;
     outline: none!important;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 body {
     font-family: "Source Sans Pro", Arial, sans-serif;
@@ -20,7 +28,8 @@ body {
     font-size: 15px;
     line-height: 1.7;
     color: #828282;
-    background: #003c43;
+    background-image: url("../images/bg_body.jpg");
+    background-repeat: repeat;
 }
 .container {
     width: 980px;
@@ -91,7 +100,8 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%;
     padding: 0;
     z-index: 1001;
-    background: #1a5056;
+    background-image:url('../images/bg_menu.png');
+    background-repeat: repeat;
 }
 .fh5co-nav .top-menu {
     padding: 22px 0;
@@ -406,6 +416,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-course-categories,
+#fh5co-sorteio,
+#fh5co-regulamento,
 #fh5co-counter,
 #fh5co-course,
 #fh5co-register,
@@ -422,6 +434,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
     #fh5co-course-categories,
+    #fh5co-sorteio,
+    #fh5co-regulamento,
     #fh5co-counter,
     #fh5co-course,
     #fh5co-register,
@@ -437,10 +451,38 @@ h1, h2, h3, h4, h5, h6, figure {
     }
 }
 #fh5co-course-categories{
-    background: #ffffff;
+    background-image: url("../images/como-participar-lines.png"), url("../images/bg_body.jpg");
+    background-position: -780px bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, auto;
     padding-top: 49px;
     padding-bottom: 38px;
 }
+#fh5co-sorteio{
+    background:  #017a83;
+    padding-top: 49px;
+    padding-bottom: 38px;
+}
+#fh5co-regulamento{
+    background:  #a8c717;
+    padding-top: 49px;
+    padding-bottom: 38px;
+}
+
+.h1-title{
+    text-align: left;
+    margin-bottom: 60px;
+    margin-top: -15px;
+}
+.h1-title img{
+    width: 400px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.img-maquininha{
+    margin-bottom: 50px;
+}
+
 
 .services {
     width: 95%;
@@ -748,6 +790,9 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 16px;
     color: #ffffff;
     margin-bottom: 25px;
+    margin-top: -60px;
+    text-align: left;
+    padding-left: 95px;
 }
 
 #fh5co-testimonial {
@@ -990,16 +1035,22 @@ h1, h2, h3, h4, h5, h6, figure {
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
-    border-bottom: 10px solid #bfd730;
     min-height: 500px;
+    text-align: center;
+    padding: 2em 0;
+
+}
+#fh5co-register-banner img{
+    margin: auto;
 }
 #fh5co-register {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
-    border-bottom: 10px solid #bfd730;
-    min-height: 500px;
+    border-bottom: 0px solid #bfd730;
+    min-height: 700px;
+    padding: 49px 0;
 }
 #fh5co-register .overlay {
     position: absolute;
@@ -1028,6 +1079,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-register-banner {
     min-height: 700px!important;
     border-bottom: 0px solid #bfd730!important;
+    text-align: center;
 }
 .simply-countdown {
     /* The countdown */
@@ -1195,14 +1247,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-    background: #1a5056;
+    background: #a8c717;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
     color: #fff !important;
     padding: 30px;
-    border-bottom: solid #bfd730 15px;
 }
 
 #fh5co-footer .copyright .block {
@@ -1213,15 +1264,22 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-footer span{
     float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+#fh5co-footer span img{
+    width: 40px;
 }
 #fh5co-footer span p{
     float: left;
     line-height: 40px;
-    margin-right: 15px;
+    margin-right: 5px;
+    font-size: 12px;
 }
 .brand_footer{
     position: relative;
-    left: 100px;
+    margin-bottom: 30px;
+    display: block;
 }
 #map {
     width: 100%;
@@ -1682,7 +1740,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
+    padding-top: 0px;
     height: 0;
 }
 .videoWrapper iframe {
@@ -1697,17 +1755,18 @@ h1, h2, h3, h4, h5, h6, figure {
     background-image: url("../images/login_full.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    width:800px;
-    height:319px;
+    width:350px;
+    height:400px;
     margin: auto;
     position: relative;
     top: 60px;
-    margin-top:100px;
+    margin-top:0px;
+    margin-left: 250px;
 }
 .form-show-2{display: none}
 .box-consult form{
-    float: right;
-    width: 330px;
+    float: left;
+    width: 100%;
     text-align: center;
 }
 .img-table{
@@ -1716,20 +1775,20 @@ h1, h2, h3, h4, h5, h6, figure {
 #txt_cupom{
     float: left;
     height: 30px;
-    width: 70%;
+    width: 90%;
     border: 0px;
-    margin-top: 120px;
-    margin-left:40px;
-    background: none;
+    margin-top: 37px;
+    margin-left:10px;
+    background:none;
 }
 #btn_search_cupom{
-    float: left;
+    float: right;
     height: 40px;
     width: 150px;
     border: 0px;
-    margin-top: 15px;
-    margin-left: 45px;
-    background: none;
+    margin-top: 12px;
+    margin-right: 14px;
+    background:none;
 }
 #txt_cupom1{
     float: left;
@@ -1769,17 +1828,17 @@ h1, h2, h3, h4, h5, h6, figure {
     border: 1px solid #eeeeee;
 }
 .results h3{
-    color: #00ae9d;
+    color: #a8c717;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 46px;
+    margin-top: 20px;
 }
 ul{
     list-style: none;
     padding: 0px;
 }
 ul.list-results-head li{
-     color: #00ae9d;
+     color: #a8c717;
      font-size: 16px;
      font-weight: 600;
      text-align: left;
@@ -1797,34 +1856,18 @@ ul.list-results-content li div{
     width: 100%;
     border-radius: 7px;
     padding: 4px;
-
-    background: rgba(213,215,216,1);
-    background: -moz-linear-gradient(top, rgba(213,215,216,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(213,215,216,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(top, rgba(213,215,216,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(213,215,216,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(213,215,216,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to bottom, rgba(213,215,216,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d7d8', endColorstr='#ffffff', GradientType=0 );
-
+    background: transparent;
 }
 ul.list-results-content li span{
     font-size: 15px;
     text-align: left;
     padding: 3px 20px;
-    border-radius: 7px;
+    border-radius: 0px;
     width: 100%;
     float: left!important;
     margin: 0px!important;
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
-    border: 2px solid #bdbfc1;
+    border: 1px solid #ffffff;
+    color: #ffffff;
 
 }
 ul.list-results-content li .first{
@@ -1833,12 +1876,11 @@ ul.list-results-content li .first{
 ul.list-results-content li .second{
     width: 95%;
 }
-#fh5co-contact form{
-    background-image: url("../images/form.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+#fh5co-contact{
+    padding-top: 49px;
+    padding-bottom: 0px; 
 }
+
 
 #fh5co-contact form h3{
     color: #6d6e71;
@@ -1852,49 +1894,48 @@ ul.list-results-content li .second{
 #fh5co-contact form .form-group{
     margin-bottom: 6px;
 }
-#fh5co-contact form input[type=text]{
-    width: 70%;
+#fh5co-contact form label{
+    color: #fff;
+}
+#fh5co-contact form input[type=text], #fh5co-contact form select{
+    width: 100%;
     height: 40px;
     border: 0px;
     margin: auto;
-    background-image: url("../images/txt_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    color: #ffffff;
 }
 #fh5co-contact form textarea{
-    min-width: 80%;
-    max-width: 80%;
-    min-height: 360px;
-    max-height: 360px;
+    border-radius: 1px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 230px;
+    max-height: 230px;
     padding-top: 30px;
     border: 0px;
     margin: auto;
-    background-image: url("../images/textarea_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center top;
     margin-bottom: 3px;
+    border: 1px solid #ffffff;
 }
 #fh5co-contact form .btn{
     width:  125px;
     height: 41px;
     border: 0px;
     margin: auto;
-    background-image: url("../images/btn_send.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     padding: 0px;
     border-radius: 0px;
     border: 0px;
-    background-color: transparent;
+    background-color:transparent;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
+    color: #fff;
+    text-align: right;
+    font-size: 15px;
 }
 .btn-send{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: right;
 }
@@ -1925,12 +1966,14 @@ ul.list-results-content li .second{
 .cooperativas h3{
     margin-top:5px;
     margin-bottom: 40px;
+    color: #fff;
 }
 .cooperativas h4{
     margin-bottom: 1px!important;
     margin-top: 5px!important;
     font-size: 16px;
     text-align: left;
+    color: #fff;
 }
 .my-numbers{
     max-width: 70%;
@@ -1943,7 +1986,10 @@ ul.list-results-content li .second{
 
 #fh5co-hero{
     height: auto;
-    background: #003C43;
+    background-image: url("../images/bg_hero_lines.png"), url("../images/bg_hero.jpg");
+    background-repeat:no-repeat;
+    background-size: 65%, cover;
+    background-position: right -150px bottom, left top;
     padding-bottom: 30px;
 }
 
@@ -2237,6 +2283,12 @@ ul.list-results-content li .second{
     #fh5co-hero .flexslider .slides li {
         min-height: 720px;
         height: 720px;
+    }
+
+    #fh5co-hero{
+        background-repeat:no-repeat;
+        background-size: 50%, cover;
+        background-position: right -150px bottom, left top;
     }
 }
 @media screen and (min-width: 1700px) {

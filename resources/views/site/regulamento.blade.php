@@ -14,8 +14,8 @@
 		<div id="fh5co-course-categories">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h1>REGULAMENTO</h1>
+					<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center fh5co-heading">
+						<h1 class="h1-title"><img src="{{asset('site/images/txt_regulamento.png')}}" alt="" class="img-responsive animate-box" style="width:310px;"></h1>
 				</div>
 			</div>
 			<div class="row">
