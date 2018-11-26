@@ -1,3 +1,4 @@
+<div id="gotohome"></div>
 <aside id="fh5co-hero">
     <div class="fh5co-register-banner" id="fh5co-register-banner">
         <img src="{{asset('site/images/section_1.png')}}" alt="" class="img-responsive animate-box">

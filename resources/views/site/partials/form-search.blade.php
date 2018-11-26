@@ -14,7 +14,7 @@
                 <div class="box-consult">
                     <form action="{{route('cupons.consult')}}" method="post">
                         <input name="_token" type="hidden" value="{{ csrf_token() }}" />
-                        <input type="text" name="txt_document" id="txt_cupom" onkeypress="onlyNumber('#txt_cupom');">
+                        <input type="text" name="txt_document" id="txt_cupom" onkeypress="onlyNumber('#txt_cupom');" placeholder="Digite seu CPF ou CNPJ para consultar seus números da sorte:">
                         <input type="submit" id="btn_search_cupom" value="">
                     </form>
                 </div>

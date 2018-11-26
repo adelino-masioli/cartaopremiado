@@ -22,6 +22,11 @@
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+.lkgoto{
+    display: inline-block;
+    height: 1px;
+    width: 100%;;
+}
 body {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 400;
@@ -30,6 +35,7 @@ body {
     color: #828282;
     background-image: url("../images/bg_body.jpg");
     background-repeat: repeat;
+    padding-top: 70px;
 }
 .container {
     width: 980px;
@@ -102,6 +108,22 @@ h1, h2, h3, h4, h5, h6, figure {
     z-index: 1001;
     background-image:url('../images/bg_menu.png');
     background-repeat: repeat;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    position: fixed;
+    top: 0px;
+}
+.fh5co-nav-fixed{
+    position: fixed;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    top: 0px;
 }
 .fh5co-nav .top-menu {
     padding: 22px 0;
@@ -1784,7 +1806,23 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-top: 37px;
     margin-left:10px;
     background:none;
+    font-size: 12px;
+    color: #008f99;
 }
+#txt_cupom::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #008f99;
+    opacity: 1; /* Firefox */
+}
+
+#txt_cupom:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #008f99;
+}
+
+#txt_cupom::-ms-input-placeholder { /* Microsoft Edge */
+    color: #008f99ed;
+}
+
+
 #btn_search_cupom{
     float: right;
     height: 40px;

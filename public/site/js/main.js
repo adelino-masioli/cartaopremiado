@@ -187,6 +187,12 @@
 				$('.js-top').removeClass('active');
 			}
 
+			/*if ($win.scrollTop() > 100) {
+				$('.fh5co-nav').addClass('fh5co-nav-fixed');
+			} else {
+				$('.fh5co-nav').removeClass('fh5co-nav-fixed');
+			}*/
+
 		});
 	
 	};
@@ -297,8 +303,8 @@
 }());
 
 function scrollToDiv(div) {
-    $('html, body').animate({
-        scrollTop: $(div).offset().top
+    $('html').animate({
+        scrollTop: $(div).offset().top - 70
     }, 500, 'easeInOutExpo');
 
     return false;

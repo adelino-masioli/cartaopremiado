@@ -33,6 +33,10 @@
                             <label for="txt_name">Estado:</label>
 
                             <select name="txt_uf" id="txt_uf" class="form-control" required>
+                                <option value="MG">Minas Gerais</option>
+                        </select>
+
+                            <select name="txt_ufs" id="txt_ufs" class="form-control hidden" required>
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AP">Amapá</option>

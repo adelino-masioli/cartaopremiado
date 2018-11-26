@@ -3,14 +3,13 @@
 @section('content')
 
 	<div class="fh5co-loader"></div>
-	
 	<div id="page">
     @include("site.layout.menu")
     @include("site.layout.banner")
 
-
+    <div id="lk_comoparticipar" class="lkgoto"></div>
 	<div id="fh5co-course-categories">
-		<div class="container" id="lk_comoparticipar">
+		<div class="container">
 			<div class="row animate-box">
 				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center fh5co-heading">
 					<h1 class="h1-title"><img src="{{asset('site/images/txt_como_participar.png')}}" alt="" class="img-responsive animate-box"></h1>
@@ -54,6 +53,16 @@
                 setTimeout(function () {
                     scrollToDiv('{{Session::get('lk_goto')}}');
                 }, 600);
+            });
+        </script>
+    @else
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('html, body').animate({
+                    scrollTop: $('#gotohome').offset().top - 70
+                }, 500, 'easeInOutExpo');
+                
+                return false;
             });
         </script>
     @endif
