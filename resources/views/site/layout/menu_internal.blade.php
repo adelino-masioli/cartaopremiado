@@ -9,7 +9,7 @@
                     <ul>
                         <li><a href="{{url('cartapremiado')}}/page">Home</a></li>
                         <li><a href="{{url('cartapremiado')}}/lk_comoparticipar">Como participar</a></li>
-                        <li><a href="{{url('cartapremiado')}}/lk_formconsult">Consulte seus cupons</a></li>
+                        <li><a href="{{url('cartapremiado')}}/lk_formconsult">Consulte os números da sorte</a></li>
                         <li><a href="{{url('cartapremiado')}}/lk_result">Sorteios</a></li>
                         <li><a href="{{route('regulation')}}">Regulamento</a></li>
                         <li><a href="{{url('cartapremiado')}}/lk_contact">Fale conosco</a></li>
