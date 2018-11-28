@@ -52,14 +52,18 @@
     <script src="{{asset('site/js/respond.min.js')}}"></script>
     <![endif]-->
 
-    <!-- Global site tag (gtag.js) - Google Ads: 805693732 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-805693732"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109689822-1"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'AW-805693732');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+
+    gtag('config', 'UA-109689822-1');
     </script>
+
+
 
     <!-- Event snippet for Cartão Premiado conversion page -->
     <script>
