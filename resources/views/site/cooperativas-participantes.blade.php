@@ -21,7 +21,7 @@
 					<div class="services cooperativas">
 						<div class="desc">
 							<h3>Acesse o regulamento para mais informações.</h3>
-
+                                <h4 class="col-md-4 col-md-offset-4 animate-box">SICOB CREDIMED</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB AC CREDI</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB ACICREDI</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB AGROCREDI</h4>
@@ -65,7 +65,6 @@
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICARMOMINAS</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICARPA</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICENM</h4>
-                                <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICHAPADA</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICOM</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICOOP</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDICOPA</h4>
@@ -82,7 +81,6 @@
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDILUZ</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDIMAC</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDIMATA</h4>
-                                <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDIMED</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDIMEPI</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDIMIL</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB CREDIMONTE</h4>
@@ -147,8 +145,10 @@
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB UNIÃO CENTRAL</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB UNIÃO CENTRO-OESTE</h4>
                                 <h4 class="col-md-4 col-md-offset-4 animate-box">SICOOB VALE DO AÇO</h4>
-                                
-                            
+
+
+
+
 
                         </div>
 					</div>
