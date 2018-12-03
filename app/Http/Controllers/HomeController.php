@@ -135,7 +135,8 @@ class HomeController extends Controller
                 $contact_dest = 'daniela.miranda@cecremge.org.br';
             }
 
-            $args['toc'] = [$contact_dest, 'alfjuniorbh.web@gmail.com'];
+            //$args['toc'] = [$contact_dest, 'alfjuniorbh.web@gmail.com'];
+            $args['toc'] = [$contact_dest];
 
            \Mail::send("email.contato", $args, function($message)  use ($args){
                 $message->from($args['txt_email'],'Cartão Premiado')
