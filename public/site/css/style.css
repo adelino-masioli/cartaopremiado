@@ -2025,9 +2025,11 @@ ul.list-results-content li .second{
     max-width: 70%;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 .my-numbers, .my-numbers tr, .my-numbers th, .my-numbers td{
     border: 0px!important;
+    color: #fff;
 }
 
 #fh5co-hero{
