@@ -13,6 +13,9 @@ class UploadCupom extends Command
     //pra rodar esse carinha forçando 
     //php -dmemory_limit=1G artisan command:uploadcupom 
 
+    //local
+    //php  artisan command:uploadcupom
+
     /**
      * The name and signature of the console command.
      *

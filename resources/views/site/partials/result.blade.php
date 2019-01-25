@@ -19,9 +19,9 @@
                     </ul>
 
                     <ul class="list-results-content">
-                        <li class="col-md-5"><div class="first">  <span>Nome do ganhador aqui</span></div></li>
-                        <li class="col-md-4"><div class="second"> <span>Número 123.567.79-10</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>&nbsp;</span></div></li>                      
+                        <li class="col-md-5"><div class="first">  <span>Letícia Alves Oliveira</span></div></li>
+                        <li class="col-md-4"><div class="second"> <span>Série 132 – Nº 65392</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Sicoob Credicapi</span></div></li>                      
                     </ul>
 
                     <div class="desc" style="padding-top:80px;">
