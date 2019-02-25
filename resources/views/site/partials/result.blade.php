@@ -34,9 +34,9 @@
                     </ul>
 
                     <ul class="list-results-content">
-                        <li class="col-md-5"><div class="first">  <span>Nome do ganhador aqui</span></div></li>
-                        <li class="col-md-4"><div class="second"> <span>Número 123.567.79-10</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>&nbsp;</span></div></li>                      
+                        <li class="col-md-5"><div class="first">  <span>Beatriz Aparecida Resende</span></div></li>
+                        <li class="col-md-4"><div class="second"> <span>Série 263 – Nº 4016</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Sicoob Credimed</span></div></li>                      
                     </ul>
 
                     <div class="desc" style="padding-top:80px;">
