@@ -13,64 +13,96 @@
                         <h3>Sorteio Mensal - 23/01/2019 | 01 (um) Renault Kwid Zen 0Km</h3>
                     </div>
                     <ul class="list-results-head">
-                        <li class="col-md-5">Nome:</li> 
-                        <li class="col-md-4">Número da Sorte:</li>                       
-                        <li class="col-md-3">Cooperativa:</li>
+                        <li class="col-md-4">Nome:</li> 
+                        <li class="col-md-3">Número da Sorte:</li>                       
+                        <li class="col-md-5">Cooperativa:</li>
                     </ul>
 
                     <ul class="list-results-content">
-                        <li class="col-md-5"><div class="first">  <span>Letícia Alves Oliveira</span></div></li>
-                        <li class="col-md-4"><div class="second"> <span>Série 132 – Nº 65392</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>Sicoob Credicapi</span></div></li>                      
+                        <li class="col-md-4"><div class="first">  <span>Letícia Alves Oliveira</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 132 – Nº 65392</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credicapi</span></div></li>                      
                     </ul>
 
                     <div class="desc" style="padding-top:80px;">
                         <h3>Sorteio Mensal - 20/02/2019 | 01 (um) Renault Kwid Zen 0Km</h3>
                     </div>
                     <ul class="list-results-head">
-                        <li class="col-md-5">Nome:</li> 
-                        <li class="col-md-4">Número da Sorte:</li>                       
-                        <li class="col-md-3">Cooperativa:</li>
+                        <li class="col-md-4">Nome:</li> 
+                        <li class="col-md-3">Número da Sorte:</li>                       
+                        <li class="col-md-5">Cooperativa:</li>
                     </ul>
 
                     <ul class="list-results-content">
-                        <li class="col-md-5"><div class="first">  <span>Beatriz Aparecida Resende</span></div></li>
-                        <li class="col-md-4"><div class="second"> <span>Série 263 – Nº 4016</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>Sicoob Credimed</span></div></li>                      
+                        <li class="col-md-4"><div class="first">  <span>Beatriz Aparecida Resende</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 263 – Nº 4016</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credimed</span></div></li>                      
                     </ul>
 
                     <div class="desc" style="padding-top:80px;">
                         <h3>Sorteio Regional - 20/03/2019 | 09 (nove) Renaults Kwid Zen 0Km</h3>
                     </div>
                     <ul class="list-results-head">
-                        <li class="col-md-5">Nome:</li> 
-                        <li class="col-md-4">Número da Sorte:</li>                       
-                        <li class="col-md-3">Cooperativa:</li>
+                        <li class="col-md-4">Nome:</li> 
+                        <li class="col-md-3">Número da Sorte:</li>                       
+                        <li class="col-md-5">Cooperativa:</li>
                     </ul>
 
 
-                    @for($i=0;$i<9;$i++)
+   
                     <ul class="list-results-content">
-                        <li class="col-md-5"><div class="first">  <span>Nome do ganhador aqui</span></div></li>
-                        <li class="col-md-4"><div class="second"> <span>Número 123.567.79-10</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>&nbsp;</span></div></li>                      
+                        <li class="col-md-4"><div class="first">  <span>Drogaria Magnus LTDA - ME</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 6 - Nº 50878</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Crediriodoce</span></div></li> 
+                        
+                        <li class="col-md-4"><div class="first">  <span>Sebastião Cesar de Souza Adolfo</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 46 - Nº 50879</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credimata</span></div></li>  
+
+                        <li class="col-md-4"><div class="first">  <span>Gessica Marina Alves</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 86 - Nº 50884</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credivertentes</span></div></li>  
+
+                        <li class="col-md-4"><div class="first">  <span>Casa Alvorada Ferro e Aço LTDA</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 126 - Nº 50875</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credesp e Sicoob Credibom</span></div></li> 
+
+                        <li class="col-md-4"><div class="first">  <span>Wagner Alberto Figueiredo</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 166 - Nº 50881</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Agrocredi</span></div></li> 
+
+                        <li class="col-md-4"><div class="first">  <span>Casa de Carnes Alandio LTDA</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 206 - Nº 50881</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credipatos</span></div></li> 
+
+                        <li class="col-md-4"><div class="first">  <span>Maria Vanilda de Jesus</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 246 - Nº 50877</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Aracoop</span></div></li> 
+
+                        <li class="col-md-4"><div class="first">  <span>Rogério Lúcio Chaves Resende</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 286 - Nº 50875</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credicom</span></div></li> 
+
+                        <li class="col-md-4"><div class="first">  <span>Pedro de Assis Peixoto</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 326 - Nº 50876</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Credibelo</span></div></li> 
                     </ul>
-                    @endfor
+
 
 
                     <div class="desc" style="padding-top:80px;">
                         <h3>Sorteio Final - 27/03/2019 | 01 (uma) Toyota Hilux 4x2 Flex</h3>
                     </div>
                     <ul class="list-results-head">
-                        <li class="col-md-5">Nome:</li> 
-                        <li class="col-md-4">Número da Sorte:</li>                       
-                        <li class="col-md-3">Cooperativa:</li>
+                        <li class="col-md-4">Nome:</li> 
+                        <li class="col-md-3">Número da Sorte:</li>                       
+                        <li class="col-md-5">Cooperativa:</li>
                     </ul>
 
                     <ul class="list-results-content">
-                        <li class="col-md-5"><div class="first">  <span>Nome do ganhador aqui</span></div></li>
-                        <li class="col-md-4"><div class="second"> <span>Número 123.567.79-10</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>&nbsp;</span></div></li>                      
+                        <li class="col-md-4"><div class="first">  <span>Nome do ganhador aqui</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Série 000 - Nº 00000</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>&nbsp;</span></div></li>                      
                     </ul>
                      
                 </div>
