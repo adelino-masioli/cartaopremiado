@@ -100,9 +100,9 @@
                     </ul>
 
                     <ul class="list-results-content">
-                        <li class="col-md-4"><div class="first">  <span>Nome do ganhador aqui</span></div></li>
-                        <li class="col-md-3"><div class="second"> <span>Série 000 - Nº 00000</span></div></li>
-                        <li class="col-md-5"><div class="second"> <span>&nbsp;</span></div></li>                      
+                        <li class="col-md-4"><div class="first">  <span>Ronaldo Ferreira Cardoso</span></div></li>
+                        <li class="col-md-3"><div class="second"> <span>Sério 192 - Nº 20598</span></div></li>
+                        <li class="col-md-5"><div class="second"> <span>Sicoob Agrocredi</span></div></li>                      
                     </ul>
                      
                 </div>
